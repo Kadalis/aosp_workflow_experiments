@@ -41,5 +41,5 @@ jobs:
           mkdir -p /home/runner/msmnile_au_aosp
           cd /home/runner/msmnile_au_aosp
           repo init --depth 1 -u https://git.codelinaro.org/clo/la/platform/manifest.git -b release -m LA.AU.1.4.5.r1-02800-gen3meta.0.xml --repo-url=https://git.codelinaro.org/clo/tools/repo.git --repo-branch=aosp/stable
-          repo sync -v -j4 platform/vendor/opensource/video-driver platform/vendor/opensource/camera-kernel platform/vendor/opensource/audio-kernel platform/vendor/opensource/display-drivers platform/vendor/opensource/dataipa platform/vendor/opensource/video-driver kernel/msm-5.4
+          repo sync --fail-fast -j4 platform/vendor/opensource/video-driver platform/vendor/opensource/camera-kernel platform/vendor/opensource/audio-kernel platform/vendor/opensource/display-drivers platform/vendor/opensource/dataipa platform/vendor/opensource/video-driver kernel/msm-5.4
           
